@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape= "oval"
+    android:useLevel= "false">
+    <!--填充-->
+    <solid android:color="@color/divider" />
+    <!--倒角-->
+    <corners android:radius="5dp" />
+
+
+    <stroke android:width="0px" android:color="@color/divider" />
+    <size android:height="10dp"
+        android:width="10dp"/>
+</shape>

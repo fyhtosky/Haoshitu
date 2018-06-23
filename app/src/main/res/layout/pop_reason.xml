@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/bac">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="请输入原因"/>
+
+    <com.sj.yinjiaoyun.shituwang.flowLayout.TagFlowLayout
+        android:layout_below="@+id/tv"
+        android:id="@+id/tag_trait"
+        zhy:max_select="1"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"/>
+
+          <LinearLayout
+              android:layout_below="@+id/tag_trait"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <EditText
+                  android:id="@+id/et_reason"
+                  android:layout_width="match_parent"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:padding="1dp"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/et_reason"/>
+              <TextView
+                  android:id="@+id/tv_hint"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/red"
+                  android:gravity="center|left"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:visibility="gone"/>
+              <LinearLayout
+                  android:layout_width="300dp"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="10dp"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+                  <Button
+                      android:id="@+id/bt_cancel"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="40dp"
+                      android:text="取消"
+                      android:background="@color/white"/>
+                  <ImageView
+                      android:layout_width="2dp"
+                      android:layout_height="match_parent"
+                      android:background="@color/white"/>
+                  <Button
+                      android:id="@+id/bt_comfirm"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="40dp"
+                      android:text="确定"
+                      android:textColor="@color/main_color"
+                      android:background="@color/white"/>
+              </LinearLayout>
+          </LinearLayout>
+
+
+</RelativeLayout>

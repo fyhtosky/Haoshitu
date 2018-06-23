@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/protayal_title"/>
+    <com.sj.yinjiaoyun.shituwang.view.CreditScoreView
+        android:layout_below="@+id/tv_title"
+        android:id="@+id/credit_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/protayal"/>
+        <Button
+            android:layout_below="@+id/credit_view"
+            android:id="@+id/bt_info"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="完善信息"
+            android:textSize="16sp"
+            android:background="@drawable/portayal_btn"
+            android:textColor="@color/white"/>
+
+</RelativeLayout>

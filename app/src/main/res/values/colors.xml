@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--刷新框架所用到的颜色-->
+    <color name="black">#000000</color>
+   <!--一级标题名字-->
+    <color name="title_color">#434343</color>
+    <!--副标题-->
+    <color name="sub_title">#7d7d7d</color>
+    <!--主色调的颜色-->
+    <color name="main_color">#24C789</color>
+    <!--颜色未选择 默认色调-->
+    <color name="color_no_selector">#b5b5b5</color>
+    <color name="color_skill">#7d7d7d</color>
+    <color name="white">#FFFFFF</color>
+    <color name="fine_line">#eeeeee</color>
+    <!--导航上线-->
+    <color name="main_line">#dcdcdc</color>
+    <!--分割线-->
+    <color name="divider">#e5e5e5</color>
+    <color name="login_color">#a0a0a0</color>
+    <color name="protayal_start">#24c789</color>
+    <color name="protayal_end">#00d4b5</color>
+    <color name="circle">#eeeeee</color>
+    <color name="red">#F14347</color>
+    <color name="yellow">#FFD700</color>
+    <color name="bg_floder_press">#bdbdbd</color>
+
+    <color name="text1">#59B29C</color>
+    <color name="text2">#333333</color>
+    <color name="background">#FFFFFF</color>
+    <color name="split_line">#11112233</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

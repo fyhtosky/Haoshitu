@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">好师徒</string>
+    <string name="guide_start">开启找师徒之旅</string>
+    <string name="selective_master">我是师父，我要找学生</string>
+    <string name="selective_student">我是徒弟，我要找师父</string>
+    <string name="agreement">我已阅读并同意《好师徒用户相关协议》</string>
+    <string name="agreement_title">好师徒用户注册协议</string>
+    <string name="protayal_title">您的个人画像已形成</string>
+    <string name="photos_num">%1$d张</string>
+    <string name="msg_no_camera">没找到摄像头</string>
+    <string name="gravity_left">left</string>
+    <string name="gravity_center">center</string>
+    <string name="gravity_right">right</string>
+    <string name="search_hint">搜索职位、企业导师、公司</string>
+    <string name="location_all">全国</string>
+</resources>

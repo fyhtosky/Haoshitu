@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sj.yinjiaoyun.shituwang.activity.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/logo"/>
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="我是学生，我要找师傅"/>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:paddingLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/phone"/>
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="22dp"
+                android:layout_height="match_parent"
+                android:hint="请输入账号"
+                android:textSize="14sp"
+                android:gravity="center|left"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="@color/login_color" />
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:paddingLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/password"/>
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="22dp"
+                android:layout_height="match_parent"
+                android:hint="请输入密码"
+                android:textSize="14sp"
+                android:inputType="textPassword"
+                android:gravity="center|left"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="@color/login_color" />
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+        <Button
+            android:layout_marginTop="100dp"
+            android:id="@+id/bt_login"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="登录"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_start_login"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tv_active"
+            android:layout_toRightOf="@+id/iv_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="立即激活"
+            android:gravity="center" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_marginLeft="30dp"
+           android:layout_alignParentLeft="true"
+            android:id="@+id/tv_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="切换身份"
+            android:textColor="@color/main_color"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="忘记密码?"
+            android:textColor="@color/main_color"
+            android:gravity="center" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

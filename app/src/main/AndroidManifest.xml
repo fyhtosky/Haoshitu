@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sj.yinjiaoyun.shituwang">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 添加接收和读取短信的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="com.sj.yinjiaoyun.xuexi.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 友盟所需要的权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".app.SophixStubApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".activity.BootActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectiveIdentityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TeacherDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangePwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AccountSetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.MyRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExpectWorkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditPersonInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangeHeadPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelfDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EducationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProfessionalSkillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExpectIndustryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WorkExperienceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProjectExperienceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TrainExperienceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyIcsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExpectedPositionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ResumePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.JobManagementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InterviewInvitationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StudentResumeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TeachterRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".adapter.TeachterEditInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AbilityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TeachterWorkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TeachterSkillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PerformanceDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AppealDescribeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InterviewManagementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TachterInterviewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.IterviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InterviewDeatilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StudentInterviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StudentChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TeachterChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WithTeachterEvalucationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EvaluationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EvaluationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.LookEvaluationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EvaStudentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StuEvaluationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.StuEvaluationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StuLookEvaluationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CollectedMyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WorkDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BusinessHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.ForgetPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.JSChangePwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.JSChangePhoneActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.sj.yinjiaoyun.shituwang.fileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider" />
+        </provider>
+    </application>
+
+</manifest>
